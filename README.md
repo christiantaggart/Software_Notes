@@ -15,4 +15,4 @@ Various APIs
 
 Computer Science Theories
 
-![.gif](https://media.giphy.com/media/YQitE4YNQNahy/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/YQitE4YNQNahy/giphy-downsized-large.gif)
