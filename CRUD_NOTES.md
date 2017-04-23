@@ -1,5 +1,5 @@
 ## GIT COMMIT
-##### markeddown a checklist [Tom-Con](https://github.com/tom-con) made
+##### marked-down checklist [Tom-Con](https://github.com/tom-con) made
 
 ```
 ~~~~ IN CLI / Terminal / BASH ~~~~~~~~~~~

@@ -89,6 +89,25 @@ module.exports = router
 ```
 ---
 
+## POST Parameters are grabbed using:
+      ```javascript
+      req.body.variable_name
+      ```
+- think of ```req.body``` as any other object.
+  - Keys are accessible by dot notation.
+- JSON will be sent in the request body for you to access them datas
+  - EXAMPLES of POST:
+  ```javascript
+        first_name: req.body.firstName
+        last_name: req.body.lastName
+        email: req.body.email
+        ```
+  - EXAMPLES of URL Parameter grab:
+          ```javascript
+          req.params.id : id  
+          ```
+         the client is requesting the route @ ('/:id')
+
 ## req.params
 ##### Source: [Express.js req.params DOCS](http://expressjs.com/en/api.html#req.params)
 
@@ -129,7 +148,8 @@ req.query.shoe.color
 // => "blue"
 
 req.query.shoe.type
-// => "converse"```
+// => "converse"
+```
 
 ---
 
@@ -145,7 +165,8 @@ app.locals.title
 // => 'My App'
 
 app.locals.email
-// => 'me@myapp.com'```
+// => 'me@myapp.com'
+```
 
 Once set, the value of `app.locals` properties persist throughout the life of the application, in contrast with `res.locals` properties that are valid only for the lifetime of the request.
 
@@ -158,7 +179,15 @@ app.locals.strftime = require('strftime');
 app.locals.email = 'me@myapp.com';
 ```
 
-___
+---
+
+## res.locals
+[Express.js Source](https://expressjs.com/en/api.html#res.locals)
+- An object that contains response local variables scoped to the request.
+- Available only to the view(s) rendered during that request / response cycle (if any).
+- This property is useful for exposing request-level information such as the request path name, authenticated user, user settings, and so on.
+
+---
 
 ## req.app
 ##### Source [req.app](https://expressjs.com/en/api.html#req.app)
