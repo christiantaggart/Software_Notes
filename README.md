@@ -4,7 +4,7 @@
 - ~~HTML~~
 <details><summary><a href="https://github.com/lil-code/Software_Notes/blob/master/JavaScript/README.md">JavaScript</a></summary>
   <ul>
-  <h5><a href=" https://github.com/lil-code/Software_Notes/tree/master/JavaScript/JQuery">$JQuery</a></h5>
+  <h5><a href="https://github.com/lil-code/Software_Notes/tree/master/JavaScript/JQuery">$JQuery</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/tree/master/Node.js/README.md">Node.js</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/modules/bcrypt_notes.md">Node Modules</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/express.js/express_notes.md">Express.js</a></h5>
