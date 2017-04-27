@@ -12,6 +12,7 @@
 - [SHELL](https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md)
 - ~~FISH~~
 <details><summary>C++</summary>
+<ul>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md">Header Files</a>
@@ -20,6 +21,7 @@
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Source_File.md">Source Files</a>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md">Static Linking</a>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md">Tips</a>
+</ul>
 </details>
 
 ~~Computer Science Theories~~
