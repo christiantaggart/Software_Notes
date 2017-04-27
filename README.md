@@ -13,14 +13,13 @@
 - ~~FISH~~
 <details><summary>C++</summary>
 <a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a>
-
- [Functions & Loops](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md)
- [Header Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md)
- [Object Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Object_File.md)
- [Pointer Notes](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Pointer_Notes.md)
- [Source Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Source_File.md)
- [Static Linking](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md)
- [Tips](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md)
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md">Header Files</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Object_File.md">Object Files</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Pointer_Notes.md">Pointer Notes</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Source_File.md">Source Files</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md">Static Linking</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md">Tips</a>
 </details>
 
 ~~Computer Science Theories~~
@@ -28,9 +27,8 @@
 ![](http://i.imgur.com/iVHfwLc.gif)
 
 
-<a href="      ">             </a>
-<a href="      ">             </a>
-<a href="      ">             </a>
+
+
 <a href="      ">             </a>
 <a href="      ">             </a>
 <a href="      ">             </a>
