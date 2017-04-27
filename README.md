@@ -1,7 +1,8 @@
 # Software_Notes:
-- ~~AngularJS~~
-- ~~CSS & Frameworks (Bootstrap)~~
-- ~~HTML~~
+ ~~AngularJS~~
+ ~~CSS & Frameworks (Bootstrap)~~
+~~HTML~~
+
 <details><summary><a href="https://github.com/lil-code/Software_Notes/blob/master/JavaScript/README.md">JavaScript</a></summary>
   <ul>
   <h5><a href="https://github.com/lil-code/Software_Notes/tree/master/JavaScript/JQuery">$JQuery</a></h5>
@@ -9,10 +10,11 @@
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/modules/bcrypt_notes.md">Node Modules</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/express.js/express_notes.md">Express.js</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/Knex.js/knex_notes.md">Knex.js</a></h5>
-
   </ul>
   </details>
-- ~~PostgreSQL~~
+
+~~PostgreSQL~~
+
 <details><summary><a href="https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md">SHELL</a></summary>
 <ul>
 <h5><a href=" https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_array_operators.md">ARRAY OPERATIONS</a></h5>
@@ -26,8 +28,7 @@
 </ul>
 </details>
 
-- ~~FISH~~
-
+~~FISH~~
 
 <details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
 <ul>
