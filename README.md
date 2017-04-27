@@ -11,7 +11,7 @@
 - ~~PostgreSQL~~
 - [SHELL](https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md)
 - ~~FISH~~
-<details><summary>C++</summary>
+<details><summary><h4>C++</h4></summary>
 <ul>
 <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a></h5>
 <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a></h5>
