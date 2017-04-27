@@ -9,4 +9,4 @@
 - ## [Static Linking](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md)
 - ## [Tips](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md)
 
-[](https://media.giphy.com/media/pXJksds5tRAic/giphy.gif)
+![](http://p.fod4.com/p/media/149c0c722a/LldeiLTbKz0hAPIGBCdA_Guy%20Fieri%20Face%20Flip.gif)
