@@ -9,4 +9,4 @@
 - ## [Static Linking](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md)
 - ## [Tips](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md)
 
-![.gif](https://media.giphy.com/media/pXJksds5tRAic/giphy.gif)
+[](https://media.giphy.com/media/pXJksds5tRAic/giphy.gif)
