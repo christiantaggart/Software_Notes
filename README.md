@@ -12,7 +12,7 @@
 - [SHELL](https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md)
 - ~~FISH~~
 <details><summary>C++</summary>
-<a src="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a>
+<a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a>
 
  [Functions & Loops](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md)
  [Header Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md)
@@ -28,12 +28,12 @@
 ![](http://i.imgur.com/iVHfwLc.gif)
 
 
-<a src="      ">             </a>
-<a src="      ">             </a>
-<a src="      ">             </a>
-<a src="      ">             </a>
-<a src="      ">             </a>
-<a src="      ">             </a>
+<a href="      ">             </a>
+<a href="      ">             </a>
+<a href="      ">             </a>
+<a href="      ">             </a>
+<a href="      ">             </a>
+<a href="      ">             </a>
 
 
 
