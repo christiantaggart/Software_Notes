@@ -2,7 +2,7 @@
 - ~~AngularJS~~
 - ~~CSS & Frameworks (Bootstrap)~~
 - ~~HTML~~
-- <details><summary><a href="https://github.com/lil-code/Software_Notes/blob/master/JavaScript/README.md">JavaScript</a></summary>
+<details><summary><a href="https://github.com/lil-code/Software_Notes/blob/master/JavaScript/README.md">JavaScript</a></summary>
   <ul>
   <h5><a href=" https://github.com/lil-code/Software_Notes/tree/master/JavaScript/JQuery">$JQuery</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/tree/master/Node.js/README.md">Node.js</a></h5>
@@ -13,7 +13,7 @@
   </ul>
   </details>
 - ~~PostgreSQL~~
-- <details><summary><a href="https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md">SHELL</a></summary>
+<details><summary><a href="https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md">SHELL</a></summary>
 <ul>
 <h5><a href=" https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_array_operators.md">ARRAY OPERATIONS</a></h5>
 <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_conditionals.md">CONDITIONALS</a></h5>
@@ -29,7 +29,7 @@
 - ~~FISH~~
 
 
-- <details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
 <ul>
 <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a></h5>
 <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a></h5>
