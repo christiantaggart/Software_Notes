@@ -1,5 +1,5 @@
 # Software_Notes:
- ~~AngularJS~~
+~~AngularJS~~
  ~~CSS & Frameworks (Bootstrap)~~
 ~~HTML~~
 
@@ -17,7 +17,7 @@
 
 <details><summary><a href="https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md">SHELL</a></summary>
 <ul>
-<h5><a href=" https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_array_operators.md">ARRAY OPERATIONS</a></h5>
+<h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_array_operators.md">ARRAY OPERATIONS</a></h5>
 <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_conditionals.md">CONDITIONALS</a></h5>
 <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_file_commands.md">FILE COMMANDS</a></h5>
 <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_functions.md">FUNCTIONS</a></h5>
