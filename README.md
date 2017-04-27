@@ -11,8 +11,9 @@
 - ~~PostgreSQL~~
 - [SHELL](https://github.com/lil-code/Software_Notes/tree/master/Shell/README.md)
 - ~~FISH~~
-<details><summary><a src="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
- [Dynamic Linking](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md)
+<details><summary>C++</summary>
+<a src="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a>
+
  [Functions & Loops](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md)
  [Header Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md)
  [Object Files](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Object_File.md)
@@ -21,6 +22,30 @@
  [Static Linking](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md)
  [Tips](https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md)
 </details>
+
 ~~Computer Science Theories~~
 
 ![](http://i.imgur.com/iVHfwLc.gif)
+
+
+<a src="      ">             </a>
+<a src="      ">             </a>
+<a src="      ">             </a>
+<a src="      ">             </a>
+<a src="      ">             </a>
+<a src="      ">             </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+C++ README
+https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B
