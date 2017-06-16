@@ -1,5 +1,6 @@
 # Heroku Deployment
 ##### [By: tjcutt](https://github.com/tjcutt)
+### [GO HERE](http://leesah-herokudeploy.surge.sh/)
 
 ```$``` indicates a terminal command. Any other code can be assumed to be written in your _integrated development environment (IDE)_ (e.g. **Atom**)
 
@@ -37,67 +38,6 @@
     "node": "v7.7.2"
   }
 }
-
-
-
-
-
-MY OLD ONE
-{
-  "name": "galvanize-bookshelf",
-  "version": "1.0.0",
-  "description": "Create a web application to manage your book collection",
-  "main": "server.js",
-  "scripts": {
-    "heroku-postbuild": "knex migrate:latest",
-    "knex": "knex",
-    "lint": "eslint  --ignore-pattern public/js/vendor",
-    "nf": "nf start",
-    "start": "nodemon server.js",
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gschool/galvanize-bookshelf.git"
-  },
-  "author": "Ian Smith <ian.smith@galvanize.com>",
-  "contributors": [
-    "Ken McGrady <ken.mcgrady@galvanize.com>",
-    "Ryan Sobol <ryan.sobol@galvanize.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gschool/galvanize-bookshelf/issues"
-  },
-  "homepage": "https://github.com/gschool/galvanize-bookshelf#readme",
-  "dependencies": {
-    "bcrypt-as-promised": "^1.1.0",
-    "body-parser": "^1.15.2",
-    "boom": "^3.2.2",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
-    "humps": "^1.1.0",
-    "jsonwebtoken": "^7.1.9",
-    "knex": "^0.11.7",
-    "morgan": "^1.7.0",
-    "pg": "^6.0.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "dotenv": "^2.0.0",
-    "eslint": "^3.1.1",
-    "eslint-config-ryansobol": "^7.7.0",
-    "foreman": "^1.4.1",
-    "mocha": "^2.5.3",
-    "nodemon": "^1.10.0",
-    "supertest": "^1.2.0"
-  },
-  "engines": {
-    "node": "7.4.0"
-  }
-}
-
-
 ```
 -   create PostgreSQL database remotely on the heroku app
 

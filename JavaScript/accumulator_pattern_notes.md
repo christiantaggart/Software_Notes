@@ -82,28 +82,29 @@
 - #### toSentence (last objects have 'and') ✅
   - The ``` slice()``` method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
    - ##### Syntax
-``` javascript
-  arr.slice(begin, end)
 
-  let toSentance = arr.slice(0, arr.length - 1).join(', ') + ", and " +  arr.slice(-1).toString();
+``` javascript
+arr.slice(begin, end)
+
+let toSentance = arr.slice(0, arr.length - 1).join(', ') + ", and " +  arr.slice(-1).toString();
 ```
   - Vanilla
 ```javascript
-    let toSentence = (items) => {
-     let string = ''
-     for (var i = 0; i < items.length; i++) {
-       let word = items[i]
+  let toSentence = (items) => {
+   let string = ''
+   for (var i = 0; i < items.length; i++) {
+     let word = items[i]
 
-       if (i === items.length-2){
-         string += `${word} and `
-       }else if (i === items.length-1){
-         string += `${word}`
-       }else {
-         string += `${word}, `
-       }
+     if (i === items.length-2){
+       string += `${word} and `
+     }else if (i === items.length-1){
+       string += `${word}`
+     }else {
+       string += `${word}, `
      }
-     return string
    }
+   return string
+ }
  ```
 ---
 - #### some✅
