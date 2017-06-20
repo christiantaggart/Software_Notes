@@ -1,6 +1,31 @@
 # Software_Notes:
-- ~~AngularJS~~
-- ~~Computer Science Theories~~
+
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Angular">AngularJS</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/API_calls.md">API Calls</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/Angular_%24http_notes.md">$HTTP</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/Angular_%24scope_vs_this_notes.md">$Scope vs This</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/Angular_Constructors.md">Constructors</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/Angular_Dependency-Injection_notes.md">Dependency Injection</a></h5>
+    <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/">...lots more</a></h5>
+  </ul>
+</details>
+
+
+
+
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Computer%20Science">Computer Science</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Computer%20Science/Binary.md">Binary</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Computer%20Science/notes_on_HTTP.md">HTTP</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Computer%20Science/Object%20Oriented%20Programming">Object Oriented Programming</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Computer%20Science/Object%20Oriented%20Programming">...lots more</a></h5>
+  </ul>
+</details>
+
+
+
+
 - ~~CSS & Frameworks (Bootstrap)~~
 - ~~FISH~~
 - ~~HTML~~
