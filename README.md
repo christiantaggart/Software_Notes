@@ -1,5 +1,8 @@
 # Software_Notes:
 
+- ~~CSS & Frameworks (Bootstrap)~~
+- ~~HTML~~
+
 <details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Angular">AngularJS</a></summary>
   <ul>
   <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Angular/API_calls.md">API Calls</a></h5>
@@ -11,8 +14,25 @@
   </ul>
 </details>
 
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C">C</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C/cpt_C_Notes.md">Constants</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C/">More coming soon</a></h5>
+  </ul>
+</details>
 
-
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
+<ul>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md">Header Files</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Object_File.md">Object Files</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Pointer_Notes.md">Pointer Notes</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Source_File.md">Source Files</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md">Static Linking</a></h5>
+<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md">Tips</a></h5>
+</ul>
+</details>
 
 <details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Computer%20Science">Computer Science</a></summary>
   <ul>
@@ -23,13 +43,27 @@
   </ul>
 </details>
 
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Databases">Databases</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Databases/MongoDB_Notes.md">MongoDB</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Databases/">More coming soon... </a></h5>
+  </ul>
+</details>
 
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Game_Development">Game Development</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Game_Development/Unity3D/notes">Unity3D Notes & (Vuforia Augmented Reality)</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Game_Development/Unity3D/scripts">Unity3D C# Scripts</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Game_Development/">More coming soon... </a></h5>
+  </ul>
+</details>
 
-
-- ~~CSS & Frameworks (Bootstrap)~~
-- ~~FISH~~
-- ~~HTML~~
-- ~~PostgreSQL~~
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Hosting_Services">Hosting Services</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Hosting_Services/Heroku%20Deployment.md">Heroku</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/Hosting_Services/">More coming soon... </a></h5>
+  </ul>
+</details>
 
 <details><summary><a href="https://github.com/lil-code/Software_Notes/blob/master/JavaScript/README.md">JavaScript</a></summary>
   <ul>
@@ -38,6 +72,13 @@
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/modules/bcrypt_notes.md">Node Modules</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/express.js/express_notes.md">Express.js</a></h5>
   <h5><a href="https://github.com/lil-code/Software_Notes/blob/master/Node.js/Knex.js/knex_notes.md">Knex.js</a></h5>
+  </ul>
+</details>
+
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/sec">Security</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/sec/cryptography_lecture_notes.md">Cryptography</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/sec">More coming soon... </a></h5>
   </ul>
 </details>
 
@@ -54,24 +95,11 @@
 </ul>
 </details>
 
-<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/C%2B%2B">C++</a></summary>
-<ul>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Dynamic_Linking.md">Dynamic Linking</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Functions_Loops_etc.md">Functions & Loops</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Header_Files.md">Header Files</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Object_File.md">Object Files</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Pointer_Notes.md">Pointer Notes</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Source_File.md">Source Files</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Static_Linking.md">Static Linking</a></h5>
-<h5><a href="https://github.com/christiantaggart/Software_Notes/blob/master/C%2B%2B/Tips.md">Tips</a></h5>
-</ul>
+<details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/VCS">Version Control Systems</a></summary>
+  <ul>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/VCS/GitHub">GitHub</a></h5>
+  <h5><a href="https://github.com/christiantaggart/Software_Notes/tree/master/VCS">More coming soon... </a></h5>
+  </ul>
 </details>
 
 ![](http://i.imgur.com/iVHfwLc.gif)
-
-
-
-
-<a href="      ">             </a>
-<a href="      ">             </a>
-<a href="      ">             </a>
