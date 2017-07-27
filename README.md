@@ -1,5 +1,5 @@
 # Software_Notes:
-
+A collection of my notes on various software languages
 - ~~CSS & Frameworks (Bootstrap)~~
 - ~~HTML~~
 
