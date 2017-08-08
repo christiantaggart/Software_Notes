@@ -34,7 +34,7 @@ public class playerController : MonoBehaviour {
 
 		Vector3 movement = new Vector3 (x, 0.0f, y);
 
-		//enter trumps speed here!!!
+		//enter maincharachter speed here!!!
 		rb.velocity = movement * 4f;
 
 		if (x != 0 && y != 0) {
