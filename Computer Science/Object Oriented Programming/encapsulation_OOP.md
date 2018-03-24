@@ -1,6 +1,6 @@
 
-#### Define Encapsulation:
-[Encapsulation Wiki](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming))
+#### Define Encapsulation [1]:
+
 - Language construct specific to OOP Bundling data/ Hiding data.
 - Used for sensitive data
 - Usually done in JS through scope or IIFES
@@ -28,3 +28,9 @@
 
 
 - ONLY MANIPULATED BY METHODS DEFINED IN THAT CLASS
+
+
+---
+Wikipedia:
+[Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming))
+[1]: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming) "Encapsulation Wiki"
