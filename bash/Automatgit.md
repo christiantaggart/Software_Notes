@@ -7,7 +7,7 @@ ag This is a commit message, notice I didnt need to wrap my message in quotes. I
 ```
 
 **Result:** This is a commit message, notice I didn't need to wrap my message in quotes. I just simply write my message after invoking the function. So silky smooth I will probably decide to commit more often
-
+![](../Media/Commit_Example.png)
 
 ```sh
 #---------------------------
