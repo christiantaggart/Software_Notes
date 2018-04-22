@@ -6,6 +6,7 @@
   - $`chrome lh 8080` Launches chrome to localhost:8080 (or what ever port number specified with a space after lh
   - $`chrome` launches chrome to your home page
 
+
 ```sh
 # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT
 chrome () {
