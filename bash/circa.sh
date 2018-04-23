@@ -1,38 +1,3 @@
-### Neap Stack Scaffold Shell Script;
-
-- **N** ode version 8.0 or greater
-- **E** xpress Version 4.16.2
-- **A** ngularJS 1.6.9
-- **P** ostGreSQL 6.4.0
-
-
----
-
-##### TO-DO LIST:  
-- CREATE MIGRATIONS BY DATA TYPE
-- CREATE SEED DATA WITH DESIRED DATA
-- CREATE MULTIPLE TEMPLATES
-- Look into sed shell command to insert on a specific line
-- [Write to file line](http://stackoverflow.com/questions/15157659/add-text-to-file-at-certain-line-in-linux)
-_IDK_
-- You can use sed to solve this:
-$`sed "15i avatar" Makefile.txt`
-_or_ use the `-i` option to save the changes made to the file.
-$`sed -i "15i avatar" Makefile.txt`
-To change all the files beginning that start Makefile:
-$`sed "15i avatar" Makefile*`
-Note: In the above 15 is your line of interest to place the text.
-
-
-
-
----
-
-
-
-
-
-```sh
 # ___________________ ANGULAR TEMPLATE______________________
 # TODO: COPY files from template that are not custom https://www.cyberciti.biz/faq/copy-command/
 
@@ -1294,7 +1259,7 @@ angular.module('nav', [])
 
     }
 
-}]);
+  }]);
 navcompEND
 #	🔔 NOTE ==> Prompt CLIENT nav.component.js Has been Created
 echo " 	🔔 (☞ﾟヮﾟ)☞     nav.component.js Created"
@@ -1492,4 +1457,3 @@ npm run dev
 
 
 # End of circa()
-```
