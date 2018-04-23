@@ -28,36 +28,174 @@ Note: In the above 15 is your line of interest to place the text.
 
 ---
 
-#### Broken Stuff:
-  - [ ] All the AngularJS Variables that start with **$** are removed and left as white space;
-  - [ ] Potential solutions:
-    - [ ] use echo and single quotes to use literal declaration.
-    - [ ] Write better code
-    - [ ] Remove Memes, Un-embed Stupid all instances of yolo
-
 
 
 
 
 ```sh
-ngtemp(){
-echo "
-AngularJS Express PostGreSQL
-🦑🦑    NAME THAT APP:   🦑 🦑 "
-# creating clients application name as appName ==========================
+# ___________________ ANGULAR TEMPLATE______________________
+# TODO: COPY files from template that are not custom https://www.cyberciti.biz/faq/copy-command/
+
+
+
+# Comment Key:
+#
+# For every Directory that is created this will be above the method:
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE <DirectoryName> ^^^^^DIRECTORY^^^^^
+#
+#
+# For every File that is created this will be above the method:
+# *****F_I_L_E___________________ CREATE <FileName> *****FILE*****
+#
+#
+# For every CLIENT Input retrieved this will be above the method:
+# ~~~~~CLIENT-INPUT~~~~~ Getting CLIENT input for <VARIABLE_NAME> ~~~~~
+#
+#
+# For simple explanations of functionality:
+# NOTE ==> <functionality_summary>
+#
+#
+# Prompting a client:
+# 🔔 NOTE ==> <Prompt_Summary>
+#
+# For Readability each chunk of functionality will end with:
+# !==>_____D_O_N_E__<functionality_summary>
+#
+# For Code Clarity Every Chunk of functionality will be separated with:
+  #
+  # _____________________________________________________________________________
+  #                                 BREAK
+  # _____________________________________________________________________________
+  #
+  #
+# END Comment Key;
+
+
+
+# 🔔 NOTE ==> Initial Prompt requesting Client input for Application name
+echo "AngularJS Express PostgreSQL Scaffolding
+✍️    NAME THAT APP:   📝 "
+# ~~~~~CLIENT-INPUT~~~~~ Retrieving value for appName ~~~~~
+# (Storing Client Input as appName)
 read appName
-
-# Regex to check for alphanumeric characters in appName ==================
+  #
+  # _____________________________________________________________________________
+  #                                 BREAK
+  # _____________________________________________________________________________
+  #
+  #
+# NOTE ==> Regex to check for alphanumeric characters in appName
 appName=${appName//[^a-zA-Z0-9_]/}
-
 if [[ -z $appName ]] ; then
    echo "Please enter app name with alphanumeric characters only"
    echo "Remember there must be a length for the file names!"
    return 0
 fi
+# !==>_____D_O_N_E__<Retrieving client input for application name>
+  #
+  # _____________________________________________________________________________
+  #                                 BREAK
+  # _____________________________________________________________________________
+  #
+  #
 
-take $appName
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE $appName ^^^^^DIRECTORY^^^^^
+# NOTE ==> Create Directory named VIA Client input)
+mkdir $appName
+cd $appName
+  #
+  # _____________________________________________________________________________
+  #                                 BREAK
+  # _____________________________________________________________________________
+  #
+  #
 
+# *****F_I_L_E___________________ CREATE README.md *****FILE*****
+touch README.md
+cat > README.md << endReadme
+# $appName
+##### Built with: Christians Instant C.R.U.D Application
+
+endReadme
+
+# *****F_I_L_E___________________ CREATE package.json *****FILE*****
+# NOTE ==> Populates name with appName Variable and Author with Current username
+# !!!! MAY BE BROKEN REPLACED "ui-router": "^1.0.0-alpha.3", with     "@uirouter/angularjs": "^1.0.15",
+cat > package.json <<PKGJSONEND
+{
+  "name": "$appName",
+  "author": "$USER",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "run-script-os",
+    "build": "run-script-os",
+    "export": "run-script-os",
+    "firststart": "npm i && npm run dbsetup && npm run dev",
+    "dbsetup": "bash ./initialStartUp.sh",
+    "dev:darwin:linux": "rm -rf public && concurrently  --kill-others \"nodemon -d 1 ./bin/www -w sever -w ./routes -w bin/www\" \"gulp start\"",
+    "build:darwin:linux": "rm -rf public && gulp build",
+    "export:darwin:linux": "bash ./export.sh"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-moment": "^1.2.0",
+    "angular-resource": "^1.6.5",
+    "aws-sdk": "^2.205.0",
+    "express": "^4.16.2",
+    "gulp-refresh": "^1.1.0",
+    "jquery": "^3.3.1",
+    "knex": "^0.13.0",
+    "moment": "^2.21.0",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.14.12",
+    "pg": "^6.4.0",
+    "source-map": "^0.7.0",
+    "three": "^0.90.0",
+    "@uirouter/angularjs": "^1.0.15",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-angularjs-annotate": "^0.8.2",
+    "babel-preset-env": "^1.6.1",
+    "browserify": "^15.2.0",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-angular": "^3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-eslint": "^4.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "nodemon": "^1.14.12",
+    "run-script-os": "^1.0.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
+PKGJSONEND
+
+#	🔔 NOTE ==> Prompt CLIENT package.json Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     package.json Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
+
+
+# *****F_I_L_E___________________ CREATE server.js *****FILE*****
 cat > server.js <<RNEND
 const express = require('express');
 const path = require('path');
@@ -88,110 +226,16 @@ app.use(function(req, res, next) {
 module.exports = app;
 RNEND
 
-cat > package.json <<JSONEND
-{
-  "name": "$appName",
-  "author": "Satoshi Nakamoto",
-  "version": "4.2.0",
-  "scripts": {
-    "start": "node ./bin/www",
-    "dev": "run-script-os",
-    "build": "run-script-os",
-    "export": "run-script-os",
-    "firststart": "npm i && npm run dbsetup && npm run dev",
-    "dbsetup": "bash ./initialStartUp.sh",
-    "dev:darwin:linux": "rm -rf public && concurrently  --kill-others \"nodemon -d 1 ./bin/www -w sever -w ./routes -w bin/www\" \"gulp start\"",
-    "build:darwin:linux": "rm -rf public && gulp build",
-    "export:darwin:linux": "bash ./export.sh"
-  },
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "dependencies": {
-    "angular": "^1.6.9",
-    "angular-moment": "^1.2.0",
-    "angular-resource": "^1.6.5",
-    "angular-ui-router": "^1.0.3",
-    "aws-sdk": "^2.205.0",
-    "express": "^4.16.2",
-    "gulp-refresh": "^1.1.0",
-    "jquery": "^3.3.1",
-    "knex": "^0.13.0",
-    "moment": "^2.21.0",
-    "morgan": "^1.8.2",
-    "nodemon": "^1.14.12",
-    "pg": "^6.4.0",
-    "source-map": "^0.7.0",
-    "three": "^0.90.0",
-    "ui-router": "^1.0.0-alpha.3",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-plugin-angularjs-annotate": "^0.8.2",
-    "babel-preset-env": "^1.6.1",
-    "browserify": "^15.2.0",
-    "concurrently": "^3.5.1",
-    "eslint": "^4.15.0",
-    "eslint-plugin-angular": "^3.1.1",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
-    "gulp-concat-css": "^3.0.0",
-    "gulp-eslint": "^4.0.1",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uglifycss": "^1.0.9",
-    "nodemon": "^1.14.12",
-    "run-script-os": "^1.0.3",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  }
-}
-JSONEND
+# 🔔 NOTE ==> Prompt CLIENT server.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     server.js Created"
+  #
+  # _____________________________________________________________________________
+  #                                 BREAK
+  # _____________________________________________________________________________
+  #
+  #
 
-# BASIC KNEX.JS CREATION
-cat > knex.js <<knexEND
-module.exports =
-  require('knex')
-  (require('./knexfile')[process.env.NODE_ENV || 'development'])
-
-knexEND
-
-
-
-# Naming the DATABASE ==============================
-echo "
-🌋🌋🌋🌋🌋 QUICK GIMME A DB NAME! 🌋🌋🌋"
-# Storing DATABASE NAME AS VARIABLE dataFortress ==================
-read dataFortress
-dataFortress=${dataFortress//[^a-zA-Z0-9_]/}
-# Logic to detect if DATABASE Name is null =======================
-if [[ -z $dataFortress ]] ; then
-   echo "Please enter database name with alphanumeric characters only"
-   echo "Remember there must be a length for the database name!"
-   return 0
-fi
-
-# ====================== CREATES A NAMED KNEXFILE LINKED TO CHOSEN DB NAME
-
-cat > knexfile.js <<knexfileEND
-module.exports = {
-  development: {
-    client: 'pg',
-    connection: { database: '$dataFortress' }
-  },
-  production: { client: 'pg', connection: process.env.DATABASE_URL }
-};
-knexfileEND
-
-
-
-
-
-# ==================== CREATES GULPFILE
-
+# *****F_I_L_E___________________ CREATE gulpfile.js *****FILE*****
 cat > gulpfile.js <<gulpfileEND
 const browserify = require('browserify');
 const gulp = require('gulp');
@@ -385,8 +429,16 @@ async function notifyOnChange() {
 }
 gulpfileEND
 
+#	🔔 NOTE ==> Prompt CLIENT gulpfile.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     gulpfile.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
-# ==================== CREATES EXPORT.SH FILE
+# *****F_I_L_E___________________ CREATE export.sh *****FILE*****
 cat > export.sh <<exportEND
 
 rm -rf public
@@ -410,9 +462,18 @@ echo '{
 }' >> .bowerrc
 
 exportEND
+#	🔔 NOTE ==> Prompt CLIENT export.sh Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     export.sh Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
-# ===================   CREATES .stylelintrc FILE
+
+# *****F_I_L_E___________________ CREATE .stylelintrc *****FILE*****
 cat > .stylelintrc <<stylelintrcEND
 
 {
@@ -430,10 +491,17 @@ cat > .stylelintrc <<stylelintrcEND
 }
 
 stylelintrcEND
+#	🔔 NOTE ==> Prompt CLIENT .stylelintrc Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     .stylelintrc Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
-
-# ===================   CREATES .gitignore FILE
+# *****F_I_L_E___________________ CREATE .gitignore *****FILE*****
 cat > .gitignore <<gitignoreEND
 
 .DS_Store
@@ -441,12 +509,19 @@ node_modules
 .hiddenfiles
 
 gitignoreEND
+#	🔔 NOTE ==> Prompt CLIENT .gitignore Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     .gitignore Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
 
 
-
-# ===================   CREATES .eslintrc FILE
+# *****F_I_L_E___________________ CREATE .eslintrc *****FILE*****
 cat > .eslintrc <<eslintrcEND
 
 {
@@ -490,21 +565,250 @@ cat > .eslintrc <<eslintrcEND
   }
 }
 
-
 eslintrcEND
+echo " 	🔔 (☞ﾟヮﾟ)☞     .eslintrc Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
-
-
-# ===================   CREATES .eslintignore FILE
+# *****F_I_L_E___________________ CREATE .eslintignore *****FILE*****
 cat > .eslintignore <<eslintignoreEND
 public/*
 
 eslintignoreEND
+echo " 	🔔 (☞ﾟヮﾟ)☞     .eslinignore Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
-take routes
+#  INSTALL dependecies
+npm i
 
-# ===================   CREATES Home Route FILE
+
+
+
+
+# ===============================================================================
+# ===============================================================================
+#                               D A T A B A S E
+# ===============================================================================
+# ===============================================================================
+
+
+
+# ~~~~~CLIENT-INPUT~~~~~ Getting CLIENT input for <databaseName> ~~~~~
+echo "
+💾💾💾 Name your DataBase 💾💾💾"
+# NOTE ==> Storing DATABASE NAME AS VARIABLE databaseName
+read databaseName
+databaseName=${databaseName//[^a-zA-Z0-9_]/}
+# Logic to detect if DATABASE Name is null =======================
+if [[ -z $databaseName ]] ; then
+   echo "Please enter database name with alphanumeric characters only"
+   echo "Remember there must be a length for the database name!"
+   return 0
+fi
+
+# ADDING Database STUFF__________________
+psql <<deleteIfExists
+drop database $databaseName;
+deleteIfExists
+
+psql <<createNewDatabase
+create database $databaseName;
+createNewDatabase
+
+
+
+# *****F_I_L_E___________________ CREATE knex.js *****FILE*****
+cat > knex.js <<knexEND
+module.exports =
+  require('knex')
+  (require('./knexfile')[process.env.NODE_ENV || 'development'])
+
+knexEND
+#	🔔 NOTE ==> Prompt CLIENT knex.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     knex.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
+# *****F_I_L_E___________________ CREATE knexfile.js *****FILE*****
+# NOTE ==> database is named VIA CLIENT input as VARIABLE databaseName
+cat > knexfile.js <<knexfileEND
+module.exports = {
+  development: {
+    client: 'pg',
+    connection: { database: '$databaseName' }
+  },
+  production: { client: 'pg', connection: process.env.DATABASE_URL }
+};
+knexfileEND
+
+
+#	🔔 NOTE ==> Prompt CLIENT knexfile.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     knexfile.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
+
+# ++++++++++++++ TABLE LOGIC
+
+# Asking for user input for first name of table in database ============
+echo "Lets name all the tables separated by a space 👍"
+
+read table
+# NOTE ==> If CLIENT Input is Less Than Zero exit table creation
+if [[ -z $table ]] ; then # -z = null ============================
+   echo "Remember there must be a length for the table name!"
+   return 0 # exits
+ else
+
+numberOfTables=$(wc -w <<< $table) # gets word count of user input
+echo  "number of tables == $numberOfTables"
+
+# DETECT AMMOUNT OF TABLES -gt == Greater Than
+  if [[ $numberOfTables -gt 1 ]]; then # if more than one table
+  c=0 # current index
+
+  # NOTE ==> Creating empty array to hold tables
+  tableArr=()
+
+  tables="$table" # NOTE ==> more than one table so table becomes tables
+
+    for name in $tables;
+    do
+        tableArr+=("$name") # appending values to the empy tableArr array
+        # echo "tableArr[@]== ${tableArr[@]}" # every element in the array so far (they get added through the loop)
+        # echo "#tableArr[@]== ${#tableArr[@]}" # the ammount of elements in the array as integer
+        echo "current element in the array: tableArr[c]== ${tableArr[c]}" # current element in the array
+        echo "You maded a table named: $name"
+        numberForSeed="$c"
+        underScoreSeed="_"
+        seedName=$numberForSeed$underScoreSeed$name
+        echo "seedName== $seedName"
+        c=$((c+1));
+
+        # Creating Knex Seeds ============================================================
+        knex seed:make $seedName
+
+        # Creating Knex migrations ============================================================
+        knex migrate:make $name
+
+
+        # ADDING SEED DATA_____________________________
+        cd seeds
+        idseq=_id_seq
+        cat > $seedName.js <<endSeed
+exports.seed = function(knex, Promise) {
+  // Deletes ALL existing entries
+  return knex('$name').del()
+    .then(function() {
+        // Inserts seed entries
+      return  knex('$name').insert([{
+      	id:1,
+        	title:'NES Classic',
+        	description:'I got lucky and found it, and decided to charge 10x what it was worth.',
+      	price:600,
+      	item_image:'http://www.nintendo.com/images/page/nes-classic/nes-classic-edition-box.png',
+        created_at: new Date('2016-06-26 14:26:16 UTC'),
+        updated_at: new Date('2016-06-26 14:26:16 UTC')
+      },{
+      	id:2,
+        	title:'Pikachu 9" Plush Stuffed Toy',
+        	description:'Polyester fiber construction Officially licensed.',
+      	price:10,
+      	item_image:'https://images-na.ssl-images-amazon.com/images/I/41VwGotRZsL._SY300_.jpg',
+        created_at: new Date('2016-06-26 14:26:16 UTC'),
+        updated_at: new Date('2016-06-26 14:26:16 UTC')
+      }]);
+    }).then(() => {
+      return knex.raw("SELECT setval('$name$idseq', (SELECT MAX(id) FROM $name));")
+    });
+};
+endSeed
+          cd ..
+
+          # MIGRATION FILES __________________________________________
+          cd migrations
+
+          # SEARCH FOR STRING CONTAINING MIGRATION NAME ===============
+          # find <path> -name *string* ======= . is current dir
+          # find . -name *$name*
+          # foundit=[read find . -name *$name*]
+
+          cat > *$name* <<endMigrations
+
+            exports.up = function(knex) {
+              return knex.schema.createTable('$name', (table) => {
+                table.increments().primary();
+                table.string('title').notNullable();
+                table.string('description').notNullable();
+                table.decimal('price').notNullable();
+                table.string('item_image').notNullable();
+                table.timestamps(true, true);
+              })
+            };
+
+            exports.down = function(knex) {
+              return knex.schema.dropTableIfExists('$name');
+            };
+
+endMigrations
+
+          cd ..
+
+        # NOTE ==> If all tables have been created prompt CLIENT
+        if [[ $c -eq $numberOfTables ]]; then
+          echo "$c Tables Created: ${tableArr[@]}" # Number of Tables and Table Names
+          echo "👍 Good Work, I know it was hard"
+        fi
+    done
+
+  else # if only one table Print the table name to console
+    echo "only one table made named $table" # if only one table print this name to console
+  fi # End of if null=========================
+
+fi # END of TableLogic
+
+
+
+
+# ===============================================================================
+# ===============================================================================
+#                      END      D A T A B A S E     END
+# ===============================================================================
+# ===============================================================================
+
+
+
+
+
+
+
+
+
+
+
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE routes ^^^^^DIRECTORY^^^^^
+mkdir routes
+cd routes
+
+# *****F_I_L_E___________________ CREATE home.js *****FILE*****
 cat > home.js <<homerouteEND
 const express = require('express')
 const router = express.Router()
@@ -513,7 +817,7 @@ const knex = require('../knex')
 router.route('/')
   .get((req, res) => {
     console.error('home')
-    knex('home1').select()
+    knex('$name').select()
       .then((all) => {
         res.send(all);
       });
@@ -521,7 +825,7 @@ router.route('/')
 
   .post((req, res) => {
     console.log('req.body ==== ', req.body)
-    knex('home1').returning(['id', 'title', 'description', 'price', 'item_image'])
+    knex('$name').returning(['id', 'title', 'description', 'price', 'item_image'])
       .insert(req.body).then((item) => {
         res.send(item[0]);
         // console.log(item[0])
@@ -532,14 +836,14 @@ router.route('/:id')
 
   .patch((req, res) => {
     // console.log(req.params.id);
-    knex('home1').where('id', req.params.id).returning(['id', 'title', 'description', 'price', 'item_image'])
+    knex('$name').where('id', req.params.id).returning(['id', 'title', 'description', 'price', 'item_image'])
       .update(req.body).then((item) => {
         res.send(item[0]);
       });
   })
 
   .delete((req, res) => {
-    knex('home1').where('id', req.params.id).returning(['id', 'title', 'description', 'price', 'item_image'])
+    knex('$name').where('id', req.params.id).returning(['id', 'title', 'description', 'price', 'item_image'])
       .del().then((item) => {
         res.send(item[0]);
       });
@@ -548,12 +852,24 @@ router.route('/:id')
 module.exports = router
 
 homerouteEND
+echo " 	🔔 (☞ﾟヮﾟ)☞     home.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 cd ..
 
-take bin
 
-# ===================   CREATES www FILE
+
+
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE routes ^^^^^DIRECTORY^^^^^
+mkdir bin
+cd bin
+
+# *****F_I_L_E___________________ CREATE www *****FILE*****
 cat > www <<wwwEND
 #!/usr/bin/env node
 
@@ -647,12 +963,23 @@ function onListening() {
 }
 wwwEND
 
+echo " 	🔔 (☞ﾟヮﾟ)☞     www Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
 cd ..
 
-take .ebextensions
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE .ebextensions ^^^^^DIRECTORY^^^^^
+mkdir .ebextensions
+cd .ebextensions
 
 
-# ===================   CREATES elastic beanstalk config FILE
+# *****F_I_L_E___________________ CREATE elastic beanstalk config *****FILE*****
+
 cat > 00_files.config <<ebfile1END
 files:
     "/etc/nginx/conf.d/proxy.conf" :
@@ -664,11 +991,21 @@ files:
 
 ebfile1END
 
+echo " 	🔔 (☞ﾟヮﾟ)☞     00_files.config Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
 cd ..
 
-take src
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE src ^^^^^DIRECTORY^^^^^
+mkdir src
+cd src
 
-# ===================   CREATES index.html FILE
+# *****F_I_L_E___________________ CREATE index.html *****FILE*****
 cat > index.html <<indexEND
 <!DOCTYPE html>
 <html>
@@ -688,7 +1025,7 @@ cat > index.html <<indexEND
   <script src="angular/angular.js"></script>
 
   <!-- UI Router -->
-  <script src="angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="@uirouter/angularjs/release/angular-ui-router.js"></script>
   <script src="angular-resource/angular-resource.js"></script>
 
   <!-- DATE / TIME TOOLS -->
@@ -712,9 +1049,21 @@ cat > index.html <<indexEND
 </html>
 indexEND
 
-take app
+echo " 	🔔 (☞ﾟヮﾟ)☞     index.html Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
-# ===================   CREATES angular config FILE
+
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE src ^^^^^DIRECTORY^^^^^
+mkdir app
+cd app
+
+# *****F_I_L_E___________________ CREATE app.js *****FILE*****
+# NOTE ==>    CREATES angular config FILE
 cat > app.js <<ngappEND
 'use-strict';
 
@@ -731,13 +1080,13 @@ const app = angular.module('app', [
   'nav',
 ]).config(config);
 
-config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider']; // DEPENDENCY INJECTION INTO CONFIG
+config.\$inject = ['\$stateProvider', '\$urlRouterProvider', '\$locationProvider']; // DEPENDENCY INJECTION INTO CONFIG
 
-function config($stateProvider, $urlRouterProvider, $locationProvider) {
+function config(\$stateProvider, \$urlRouterProvider, \$locationProvider) {
 
-  $locationProvider.html5Mode(true); // Setting clean URLs (no hashtags from button clicks)
+  \$locationProvider.html5Mode(true); // Setting clean URLs (no hashtags from button clicks)
 
-  $stateProvider
+  \$stateProvider
     .state({
       name: 'nav',
       abstract: true,
@@ -752,105 +1101,88 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 }
 
 ngappEND
-
-take components
-
-take home
-# comment IT CURRENTLY REMOVES ALL DOLLAR SIGNS $
-
-# cat > home.component.js <<homecompEND
-# angular.module('home', []).controller('homeCtrl', ['HomeService', function(HomeService) {
-#
-#   let vm = this
-#   vm.$onInit = onInit
-#   vm.$all = $all
-#   vm.$newHome = $newHome
-#   vm.$hush = $hush
-#   vm.$change = $change
-#   vm.$toggle = $toggle
-#   vm.secret = []
-#
-#   function onInit() { // LOAD ALL POSTS AS SOON AS THE PAGE LOADS
-#     return $all()
-#     console.log('wow')
-#   }
-#
-#   function $all() { // GET ALL POSTS
-#     HomeService.$all()
-#       .then((all) => {
-#         vm.secrets = all
-#       })
-#   }
-#
-#   function $newHome() { // CREATE NEW CLASSIFIED OBJECT
-#     HomeService.newHome(vm.newHome)
-#     delete vm.newHome
-#   }
-#
-#   function $hush(id) { // BURN YOUR CLASSIFIED OBJECTS AND LEAVE NO TRACES BENHIND
-#     HomeService.$hush(id.id)
-#   }
-#
-#   function $toggle(secret, $index) { //  CLASSIFIED INFO FORM DROP DOWN FORM FIELD
-#     vm.secret[$index] = !vm.secret[$index] // TOGGLES THE EDIT FORM ON A SPECIFIC PIECE OF INFO
-#     vm.changing = angular.copy(secret) // GRABS CURRENT CLASSIFIED INFO AND FILLS OUT FORM FIELDS WITH SAID HUSH HUSH STUFF
-#   }
-#
-#   function $change(edit) { // SUBMIT FUNCTION FOR YOUR EDITED DATAS
-#     HomeService.$change(vm.changing) // HITS MY SERVICE UP FOR AN AJAX CALL
-#   }
-# }]);
-# homecompEND
+echo " 	🔔 (☞ﾟヮﾟ)☞     app.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
-echo  'angular.module('home', []).controller('homeCtrl', ['HomeService', function(HomeService) {
+
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE components ^^^^^DIRECTORY^^^^^
+mkdir components
+cd components
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
+
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE home ^^^^^DIRECTORY^^^^^
+mkdir home
+cd home
+
+# *****F_I_L_E___________________ CREATE home.component.js *****FILE*****
+cat > home.component.js << endHomeComponent
+ angular.module('home', []).controller('homeCtrl', ['HomeService', function(HomeService) {
 
   let vm = this
-  vm.$onInit = onInit
-  vm.$all = $all
-  vm.$newHome = $newHome
-  vm.$hush = $hush
-  vm.$change = $change
-  vm.$toggle = $toggle
+  vm.\$onInit = onInit
+  vm.\$all = \$all
+  vm.\$newHome = \$newHome
+  vm.\$hush = \$hush
+  vm.\$change = \$change
+  vm.\$toggle = \$toggle
   vm.secret = []
 
   function onInit() { // LOAD ALL POSTS AS SOON AS THE PAGE LOADS
-    return $all()
-    console.log('wow')
+    return \$all()
+    console.log('$appName')
   }
 
-  function $all() { // GET ALL POSTS
-    HomeService.$all()
+  function \$all() { // GET ALL POSTS
+    HomeService.\$all()
       .then((all) => {
         vm.secrets = all
       })
   }
 
-  function $newHome() { // CREATE NEW CLASSIFIED OBJECT
+  function \$newHome() { // CREATE NEW CLASSIFIED OBJECT
     HomeService.newHome(vm.newHome)
     delete vm.newHome
   }
 
-  function $hush(id) { // BURN YOUR CLASSIFIED OBJECTS AND LEAVE NO TRACES BENHIND
-    HomeService.$hush(id.id)
+  function \$hush(id) { // BURN YOUR CLASSIFIED OBJECTS AND LEAVE NO TRACES BENHIND
+    HomeService.\$hush(id.id)
   }
 
-  function $toggle(secret, $index) { //  CLASSIFIED INFO FORM DROP DOWN FORM FIELD
-    vm.secret[$index] = !vm.secret[$index] // TOGGLES THE EDIT FORM ON A SPECIFIC PIECE OF INFO
+  function \$toggle(secret, \$index) { //  CLASSIFIED INFO FORM DROP DOWN FORM FIELD
+    vm.secret[\$index] = !vm.secret[\$index] // TOGGLES THE EDIT FORM ON A SPECIFIC PIECE OF INFO
     vm.changing = angular.copy(secret) // GRABS CURRENT CLASSIFIED INFO AND FILLS OUT FORM FIELDS WITH SAID HUSH HUSH STUFF
   }
 
-  function $change(edit) { // SUBMIT FUNCTION FOR YOUR EDITED DATAS
-    HomeService.$change(vm.changing) // HITS MY SERVICE UP FOR AN AJAX CALL
+  function \$change(edit) { // SUBMIT FUNCTION FOR YOUR EDITED DATAS
+    HomeService.\$change(vm.changing) // HITS MY SERVICE UP FOR AN AJAX CALL
   }
-}]);'
+}]);
+endHomeComponent
 
-> home.component.js
+#	🔔 NOTE ==> Prompt CLIENT home.component.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     home.component.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
-
-# ===================   CREATES ___ FILE
-cat > home.template.html <<hometempEND
-<div id="home" ng-cloak ng-controller="homeCtrl as $ctrl">
+# *****F_I_L_E___________________ CREATE home.template.html *****FILE*****
+cat > home.template.html << endHomeTemplate
+<div id="home" ng-cloak ng-controller="homeCtrl as \$ctrl">
 
   <div id="search">
     <input type="search" ng-model="search" placeholder="Search">
@@ -867,22 +1199,22 @@ cat > home.template.html <<hometempEND
 
   <div>
     <div id="newguy">
-      <form ng-submit="$ctrl.$newHome()">
+      <form ng-submit="\$ctrl.\$newHome()">
         <div>
           <label for="title">Title</label>
-          <input ng-model="$ctrl.newHome.title" type="text">
+          <input ng-model="\$ctrl.newHome.title" type="text">
         </div>
         <div>
           <label for="description">Description</label>
-          <textarea ng-model="$ctrl.newHome.description" type="text"></textarea>
+          <textarea ng-model="\$ctrl.newHome.description" type="text"></textarea>
         </div>
         <div>
           <label for="price">Price</label>
-          <input ng-model="$ctrl.newHome.price" type="text">
+          <input ng-model="\$ctrl.newHome.price" type="text">
         </div>
         <div>
           <label for="item_image">Item Image</label>
-          <input ng-model="$ctrl.newHome.item_image" type="url">
+          <input ng-model="\$ctrl.newHome.item_image" type="url">
         </div>
         <div>
           <button type="submit">Share your secret</button>
@@ -894,33 +1226,33 @@ cat > home.template.html <<hometempEND
 
   <!-- REPEAT -->
   <div id="wtf">
-    <div id="secrets" ng-repeat="secret in $ctrl.secrets | filter:search | orderBy:sort">
+    <div id="secrets" ng-repeat="secret in \$ctrl.secrets | filter:search | orderBy:sort">
       <div>
         <h3 id="title"> {{ secret.title }} </h3>
         <div id="body"> {{ secret.description }}</div>
 
         <div><img id="guys" ng-src="{{ secret.item_image }}"></div>
-        <p id="price">${{ secret.price }}</p>
+        <p id="price">\${{ secret.price }}</p>
 
-        <input type="button" ng-click="$ctrl.$toggle(secret, $index)" value="Edit Your Home">
-        <input type="button" ng-click="$ctrl.$hush({id: secret.id})" value="Remove Your Home">
+        <input type="button" ng-click="\$ctrl.\$toggle(secret, \$index)" value="Edit Your Home">
+        <input type="button" ng-click="\$ctrl.\$hush({id: secret.id})" value="Remove Your Home">
 
-        <div id="editeroo" class="col-md-8" ng-if="$ctrl.secret[$index]">
-          <form ng-submit="$ctrl.$change(secret)">
+        <div id="editeroo" class="col-md-8" ng-if="\$ctrl.secret[\$index]">
+          <form ng-submit="\$ctrl.\$change(secret)">
             <div>
               <label for="title">Title</label>
-              <input ng-model="$ctrl.changing.title" type="text">
+              <input ng-model="\$ctrl.changing.title" type="text">
             </div>
             <div>
               <label for="description">Description</label>
-              <textarea ng-model="$ctrl.changing.description" type="text"></textarea>
+              <textarea ng-model="\$ctrl.changing.description" type="text"></textarea>
             </div>
             <div>
               <label for="price">Price</label>
-              <input ng-model="$ctrl.changing.price" type="text">
+              <input ng-model="\$ctrl.changing.price" type="text">
             </div>
             <label for='item_url'>Item Image</label>
-            <input ng-model="$ctrl.changing.item_image" type="url">
+            <input ng-model="\$ctrl.changing.item_image" type="url">
             <div>
               <button type="submit">Save Home</button>
             </div>
@@ -933,21 +1265,30 @@ cat > home.template.html <<hometempEND
     <!-- END REPEAT -->
   </div>
 </div>
-hometempEND
+endHomeTemplate
 
+#	🔔 NOTE ==> Prompt CLIENT home.template.html Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     home.template.html Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
 cd ..
 
-take nav
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE home ^^^^^DIRECTORY^^^^^
+mkdir nav
+cd nav
 
-
-# ===================   CREATES ___ FILE
+# *****F_I_L_E___________________ CREATE nav.component.js *****FILE*****
 cat > nav.component.js <<navcompEND
 angular.module('nav', [])
   .controller('navCtrl', [function() {
     const vm = this;
-    vm.$onInit = onInit;
+    vm.\$onInit = onInit;
 
     function onInit() {
 
@@ -955,8 +1296,17 @@ angular.module('nav', [])
 
   }]);
 navcompEND
+#	🔔 NOTE ==> Prompt CLIENT nav.component.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     nav.component.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
+# *****F_I_L_E___________________ CREATE nav.template.html *****FILE*****
 cat > nav.template.html <<navtempEND
 <div id="nav">
             <a href="/">$appName LOGO GOES HERE THIS SHOULD BE A BUTTON</a>
@@ -969,11 +1319,23 @@ cat > nav.template.html <<navtempEND
         <ui-view></ui-view>
 </div>
 navtempEND
+#	🔔 NOTE ==> Prompt CLIENT nav.template.html Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     nav.template.html Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
 
 cd ..
-take css
+cd ..
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE css^^^^^DIRECTORY^^^^^
+mkdir css
+cd css
 
-# ===================   CREATES ___ FILE
+# *****F_I_L_E___________________ CREATE style.css *****FILE*****
 cat > style.css <<cssEND
 /* WRITE CUSTOM CSS IN HERE */
 
@@ -1005,14 +1367,7 @@ width: 100vw;
 background-color: yellow;
 }
 
-
-
-
-
-
 /* +++++++++++++++++++++++++++++++ DELETE ++++++++++++++++++++++ */
-
-
 
 #secrets {
   /*height: 200px;
@@ -1065,12 +1420,22 @@ background-color: yellow;
   margin-right: 25%;
 }
 cssEND
+#	🔔 NOTE ==> Prompt CLIENT style.css Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     style.css Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
 
 
 cd ..
-take services
 
-# ===================   CREATES ___ FILE
+# ^^^^^D_I_R_E_C_T_O_R_Y_________ CREATE services^^^^^DIRECTORY^^^^^
+mkdir services
+cd services
+# *****F_I_L_E___________________ CREATE home.service.js *****FILE*****
 cat > home.service.js <<homeserviceEND
 
 (function() {
@@ -1078,37 +1443,53 @@ cat > home.service.js <<homeserviceEND
 
   angular.module('home')
     .service('HomeService', service) //MY 'AJAX' CALLS TO /server/routes/home.js
-  service.$inject = ['$http']
+  service.\$inject = ['\$http']
 
-  function service($http) {
-    this.$all = function() { // GET ALL CLASSIFIED INFO
-      return $http.get('/api/home').then((all) => {
+  function service(\$http) {
+    this.\$all = function() { // GET ALL CLASSIFIED INFO
+      return \$http.get('/api/home').then((all) => {
         return all.data
       })
     }
     this.newHome = function(newHome) { // CREATE NEW CLASSIFIED OBJECT
       console.log('HomeService post request = ', newHome)
-      $http.post('/api/home', newHome)
+      \$http.post('/api/home', newHome)
     }
-    this.$hush = function(id) { // DELETE CLASSIFIED OBJECT
-      return $http.delete(`/api/home/${id}`)
+    this.\$hush = function(id) { // DELETE CLASSIFIED OBJECT
+      return \$http.delete(\`/api/home/\${id}\`)
     }
-    this.$change = function(edit) { // 'EDIT' CLASSIFIED OBJECT
-      $http.patch(`/api/home/${edit.id}/`, edit)
+    this.\$change = function(edit) { // 'EDIT' CLASSIFIED OBJECT
+      \$http.patch(\`/api/home/\${edit.id}/\`, edit)
     }
   }
 })();
-
 homeserviceEND
 
+#	🔔 NOTE ==> Prompt CLIENT home.service.js Has been Created
+echo " 	🔔 (☞ﾟヮﾟ)☞     home.service.js Created"
+  #
+  # _____________________________________________________________________________
+  #
+  # _____________________________________________________________________________
+  #
+  #  end
+
+
+cd ..
 cd ..
 
+knex migrate:rollback
+knex migrate:latest
+knex seed:run
 
-# ===================   CREATES ___ FILE
-# cat > TEMP <<TEMPEND
-# add files here
-# TEMPEND
+npm run dev
 
-# END OF CRUD
-}
+
+
+/usr/bin/open -a "/Applications/Google Chrome.app" 'http://localhost:8080'
+
+
+
+
+# End of circa()
 ```
