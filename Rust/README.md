@@ -1,6 +1,7 @@
 # Rust
 
 [Docs: Rust Book](https://doc.rust-lang.org/book/2018-edition/index.html)
+
 [Cheat Sheet](https://learnxinyminutes.com/docs/rust/)
 
 - Key
