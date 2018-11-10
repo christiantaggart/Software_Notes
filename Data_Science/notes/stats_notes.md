@@ -5,6 +5,6 @@
 - **Difference:** ``
 - **Compliment**
 
-![media-stats table](https://github.com/christiantaggart/Software_Notes/blob/master/Data_Science/notes/stats_notes.md/media/stats_operations.png)
+![media-stats table](https://github.com/christiantaggart/Software_Notes/blob/master/Data_Science/media/stats_operations.png)
 
 ---
