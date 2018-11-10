@@ -9,4 +9,4 @@
 - ## [PROCESS HANDLING](https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_process_handling.md)
 - ## [VARIABLES](https://github.com/lil-code/Software_Notes/blob/master/Shell/shell_variables.md)
 
-![](http://i.imgur.com/ehzmrh3.gif)
+![Console_Gif](http://i.imgur.com/ehzmrh3.gif)
