@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # ___________________ ANGULAR TEMPLATE______________________
 # TODO: COPY files from template that are not custom https://www.cyberciti.biz/faq/copy-command/
 

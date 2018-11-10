@@ -1,4 +1,4 @@
-### I don't remember why I needed this.
+# Fetch Changes from parent GitHub Repo
 
 ```sh
 # BASH TO GRAB STUFF FROM PARENT GIT REPO ==============================

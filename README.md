@@ -1,7 +1,9 @@
 # Software_Notes:
-A collection of my notes on various software languages
-- ~~CSS & Frameworks (Bootstrap)~~
-- ~~HTML~~
+
+A collection of my notes on various **Computer Science / Data Science / Software Language** topics
+
+<!-- - ~~CSS & Frameworks (Bootstrap)~~
+- ~~HTML~~ -->
 
 <details><summary><a href="https://github.com/christiantaggart/Software_Notes/tree/master/Angular">AngularJS</a></summary>
   <ul>

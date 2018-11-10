@@ -1,11 +1,10 @@
-### Open chrome browser:
+# Open Chrome browser on MacOS via Command Line
 
-- Example Use:
-  - $`chrome gh` opens chrome to your Github Page
-  - $`chrome gm` Opens gmail
-  - $`chrome lh 8080` Launches chrome to localhost:8080 (or what ever port number specified with a space after lh
-  - $`chrome` launches chrome to your home page
+Add the Bash Function below to your Run Commands file if bash: `.bashrc` or if ZShell `.zrc`
 
+- _**Remeber to refresh your CLI to use**_
+  - for bash:`source ~/.bashrc`
+  - for Zshell `source ~/.zrc`
 
 ```sh
 # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT # Open Chrome to ENDPOINT
@@ -25,3 +24,10 @@ chrome () {
 }
 # -------------------- END CHROME ----------
 ```
+
+- **Invocation Example Use:**
+  - $`chrome` launches chrome to your home page
+  - $`chrome gh` opens chrome to your Github Page
+  - $`chrome gm` Opens gmail
+  - $`chrome lh <desired_port_number>`Launches chrome to localhost:<desired_port_number>
+    - Example: $`chrome lh 8080` Opens chrome to localhost:8080

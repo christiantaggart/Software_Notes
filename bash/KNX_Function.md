@@ -1,4 +1,4 @@
-### Shell Script for easy KnexJS Commands:
+# Shell Script for easy KnexJS Commands
 
 ```sh
 # KNEX____Stuff================================================================
