@@ -5,6 +5,6 @@
 - **Difference:** ``
 - **Compliment**
 
-![https](./media/stats_operations.png)
+![media-stats table](/media/stats_operations.png)
 
 ---
