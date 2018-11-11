@@ -1,7 +1,7 @@
 # Probability & Statistics notes
 
 - **Union:** `A ∪ B` [wiki](https://en.wikipedia.org/wiki/Union_(set_theory))
-  - x is in A or x is in B 
+  - x is in A or x is in B
 
 ```math
 A \cup B = \{ x: x \in A \cup x\in B \}
@@ -66,7 +66,6 @@ A^C = \{x: x\notin A\}
     # or
     diff = a - b
 ```
-
 
 ---
 
