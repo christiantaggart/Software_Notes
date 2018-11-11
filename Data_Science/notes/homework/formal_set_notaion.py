@@ -75,4 +75,3 @@ deMorgans(set([1, 2, 3]), set([2, 3, 4]), set([0, 1, 2, 3, 4, 5])) # good args
 # deMorgans(set([1, 2, 3]), set([2, 8, 4]), set([0, 1, 2, 3, 4, 5])) # not subset of sample
 
 
-
