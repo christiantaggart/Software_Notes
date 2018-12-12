@@ -13,7 +13,6 @@ B = {'c', 'd', 2 }
 
 print('A U B =', A.union(B))
 # or
-print('A U B =', A| B)
 ```
 
 ---
